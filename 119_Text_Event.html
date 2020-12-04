@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Event</title>
+</head>
+<body>
+    <h1>key Event</h1>
+    Name<input type="text" id="mytext">
+
+    <script>
+        var txt = document.getElementById("mytext");
+        function ke(e){
+            console.log(e.type + ' '+ e.data);
+        }
+        txt.addEventListener("textInput", ke, false);
+        
+    </script>
+</body>
+</html>

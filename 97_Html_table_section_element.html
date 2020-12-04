@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Caption Method</title>
+</head>
+<body>
+    <table border="1" id="mytab">
+        <caption>My Table Caption</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+        <tbody id="mytbody">
+            <tr>
+                <td>11</td>
+                <td>Nitish</td>
+                <td>Javascript</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Rahul</td>
+                <td>PHP</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>Rohit</td>
+                <td>Python</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>55</td>
+                <td>Rohan</td>
+                <td>JSP</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        var tbody = document.getElementById("mytbody");
+        //var ro = tbody.rows;
+        //console.log(ro);
+        //console.log(ro[1]);
+        //console.log(ro[1].innerHTML);
+        //ro[1].innerHTML = "<tr><td>65</td><td>Mahato</td><td>JDK</td></tr>";
+        /*var row = tbody.insertRow(-1);
+        row.insertCell().textContent = "New";*/
+
+        tbody.deleteRow(0);
+    </script>
+</body>
+</html>

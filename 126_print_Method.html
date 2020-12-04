@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Method</title>
+</head>
+<body>
+    <h1>Print Document</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+         elit. Soluta eligendi rerum, officia ea 
+         id repellat laborum sapiente aliquid hic
+          amet laboriosam. Autem, doloribus corrupti 
+          commodi, consequuntur sed cumque provident excepturi saepe culpa quos iste. Temporibus quam eius possimus, excepturi vitae aperiam facilis, repellat, odio eos 
+        delectus quas! Illum, laborum dolore?</p>
+    <button type="button" id="btn">Print</button>
+        <script>
+            function printDoc(){
+                window.print();
+            }
+            document.getElementById("btn").addEventListener("click", printDoc);
+        </script>
+</body>
+</html>

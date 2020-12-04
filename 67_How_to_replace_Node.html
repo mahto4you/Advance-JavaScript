@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHtml</title>
+</head>
+<body>
+        <ul id="myul">
+            <li>List 1</li>
+            <li id="item_2">List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+        </ul>
+    <script>
+        // parentNode.replaceChild(newChild, oldChild)
+        var p = document.getElementById("myul");
+        var t = document.getElementById("item_2");
+
+        // replacing with new node
+        // creating a new element
+
+        var newChild = document.createElement("li");
+        newChild.textContent = "itemN";
+        var replaceNode = p.replaceChild(newChild, t);
+        console.log(p);
+        console.log(replaceNode);
+    </script>
+</body>
+</html>

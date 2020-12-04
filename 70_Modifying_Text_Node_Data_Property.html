@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifying Text Node Length Property</title>
+</head>
+<body>
+    <h1 id="myh2">Kenduadih Basti</h1>
+    <script>
+        // textNode.length
+       /* var h = document.getElementById("myh2");
+        var result = h.firstChild.data;
+        console.log(result);*/
+
+        var h = document.getElementById("myh2");
+        h.firstChild.data = "I am New Data";
+        console.log(h.firstChild);
+    </script>
+</body>
+</html>

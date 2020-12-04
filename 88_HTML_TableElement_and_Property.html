@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Table Element and its Properties</title>
+</head>
+<body>
+    <table border="1" id="mytab">
+        <caption>My Table Caption</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>Nitish</td>
+                <td>Javascript</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Rahul</td>
+                <td>PHP</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>Rohit</td>
+                <td>Python</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>55</td>
+                <td>Rohan</td>
+                <td>JSP</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script>
+        var table = document.getElementById("mytab");
+        /*var tcap = table.caption;
+        tcap.innerHTML = "New Caption";
+        document.write(tcap.innerHTML+"<br");*/
+
+        /*var thed = table.tHead;
+        //console.log(thed);
+        thed.innerHTML = "<tr><th>No</th><th>Student</th><th>Crs</th></tr>";
+        document.write(thed.innerHTML+"<br");*/
+
+        /*var tfut = table.tFoot;
+        //console.log(tfut);
+        tfut.innerHTML = "<tr><th>100</th><th>Dell</th><th>Intel</th></tr>";
+        document.write(tfut.innerHTML+"<br");*/
+
+        var bodi = table.tBodies;
+        console.log(bodi[0]);
+        document.write(bodi[0].innerHTML+"<br");
+    </script>
+</body>
+</html>

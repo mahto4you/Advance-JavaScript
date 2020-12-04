@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Style Decleration Object</title>
+</head>
+<body>
+    <p id="myp" style="background-color: aqua; color:blueviolet !important;">Paragraph</p>
+    <script>
+        var p = document.getElementById("myp");
+        var cs = p.style;
+        //var propValue = cs.getPropertyValue('color');
+        //console.log(propValue);
+        //cs.removeProperty('color');
+        //console.log(p);
+        /*cs.setProperty('font-size', '90px', 'important');
+        console.log(p);*/
+
+        var priority = cs.getPropertyPriority('color');
+        console.log(priority);
+    </script>
+</body>
+</html>

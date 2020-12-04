@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textContent</title>
+</head>
+<body>
+    <p id="myp">This is <span>Para</span><em>graph</em></p>
+    <script>
+        var p =document.getElementById("myp");
+        p.textContent = "Hello World";
+        console.log(p);
+        console.log(p.textContent);
+    </script>
+</body>
+</html>

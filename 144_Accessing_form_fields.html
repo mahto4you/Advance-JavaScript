@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Forms</title>
+</head>
+<body>
+    <form action="" name="myform" id="myformid">
+        Username: <input type="text" name="muf" id="userid"><br><br>
+        Password: <input type="password" name="mup" id="password_id"><br><br>
+        <input type="submit" name="btn" id="btnid" value="submit">
+    </form>
+    
+    <script>
+       /* var usrname = document.getElementById("userid");
+        console.log(usrname);
+        console.log(usrname.name);
+        console.log(usrname.type);
+        console.log(usrname.id);  */
+
+        // with Element[indexnumber]
+
+       /* var usrname = document.myform.elements[0];
+        console.log(usrname);
+        console.log(usrname.name);
+        console.log(usrname.type);
+        console.log(usrname.id);   */
+
+       // with Element ['name_attribute_value']
+      /* var usrname = document.myform.elements['muf'];
+       console.log(usrname); 
+       console.log(usrname.name);
+        console.log(usrname.type);
+        console.log(usrname.id); */
+
+       // var usrname = document.myform.muf;
+        var usrname = document.myform.userid;
+        console.log(usrname); 
+        console.log(usrname.name);
+         console.log(usrname.type);
+         console.log(usrname.id);
+    </script>
+</body>
+</html>

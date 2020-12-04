@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Before Method</title>
+</head>
+<body>
+    <div id="myid">
+        <li>Python</li>
+        <li id="my">C</li>
+        <li>C++</li>
+    </div>
+    <script>
+      var parentNode = document.getElementById("myid");
+
+      // creating New Element li
+
+      var newNode = document.createElement("li");
+
+      // Adding text using textContent
+
+        newNode.textContent = "Javascript";
+
+    // Accessing Reference Node
+
+    var refNode = document.getElementById("my");
+
+    // insert New Element
+
+   parentNode.insertBefore(newNode, refNode);
+    console.log(parentNode);
+    </script>
+</body>
+</html>

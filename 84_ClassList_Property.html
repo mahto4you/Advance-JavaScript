@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Style Manipulation</title>
+    <style>
+        .myclass1{
+            background-color: blue;
+        }
+        .myclass2{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p id="myp" class="myclass2" style="color: yellow;">Paragraph</p>
+    <script>
+        var p = document.getElementById("myp");
+        var elementClass = p.classList;
+        //console.log(elementClass);
+        //console.log(elementClass[0]);
+        //console.log(elementClass.length);
+        //console.log(elementClass.value);
+        //console.log(elementClass.item(0));
+        elementClass.add('myclass3', 'myclass4');
+        //elementClass.remove('myclass4');
+        //elementClass.replace('myclass2', 'myclass1');
+        //var c = elementClass.contains('myclass1');
+        //console.log(c);
+        elementClass.toggle('myclass2');
+        elementClass.toggle('myclass2');
+        console.log(p);
+    </script>
+</body>
+</html>

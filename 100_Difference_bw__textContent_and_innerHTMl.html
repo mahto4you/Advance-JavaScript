@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Differnce Between textContent and InnerHtml</title>
+</head>
+<body>
+    <p id="myp"></p>
+    <script>
+        var p = document.getElementById("myp");
+        p.textContent = "<em>Hello Friend  I am textContent</em>";
+        //p.innerHTML = "<em>Hello Friend I am Inner Html</em>";
+        console.log(p);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Style Decleration Object</title>
+</head>
+<body>
+    <p id="myp" style="background-color: aqua; color:blueviolet">Paragraph</p>
+    <script>
+        var p = document.getElementById("myp");
+        var cs = p.style;
+        //console.log(cs.cssText);
+        //cs.cssText = "font-size: 80px; color: blue;";
+       // console.log(cs.length);
+       // console.log(cs.item(1));
+        console.log(cs[1]);
+        console.log(p);
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Comment Node</title>
+</head>
+<body>
+    <div id="myid">
+        <h1 id="myh1">We are Larning JavaScript</h1>
+    </div>
+    <script>
+       // Creating a New Comment Node
+       var nCNode = document.createComment("Comment from JS");
+       var targetNode = document.getElementById("myid");
+
+       // Appending New Comment Node to Div
+       targetNode.appendChild(nCNode);
+       console.log(targetNode);
+    </script>
+</body>
+</html>

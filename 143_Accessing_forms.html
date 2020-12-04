@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Forms</title>
+</head>
+<body>
+    <form action="" name="myform" id="myformid">
+        Username: <input type="text" name="muf"><br><br>
+        Password: <input type="password" name="mup"><br><br>
+    </form>
+    <hr>
+    <hr>
+    <form action="" name="myform2" id="myformid2">
+        Username: <input type="text" name="muf2"><br><br>
+        Password: <input type="password" name="mup2"><br><br>
+    </form>
+    <script>
+       /* //with index Number
+        var mform = document.forms[0];
+        console.log(mform); */
+
+        // with Name Attribute using square bracket
+
+        /*var form = document.forms['myform'];
+        console.log(form);*/
+
+        // with Name Attribute using dot
+
+        /*var form = document.myform;
+        console.log(form); */ 
+
+     // with getElementby Id
+
+     var form = document.getElementById("myformid");
+     console.log(form);
+
+    </script>
+</body>
+</html>

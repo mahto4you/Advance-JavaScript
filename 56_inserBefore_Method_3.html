@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normalize Method</title>
+</head>
+<body>
+    <div id="myid">
+        <li>Python</li>
+        <li id="my">C</li>
+        <li>C++</li>
+        <li id="jv">Javascript</li>
+    </div><hr><hr>
+    <div id="myid2">
+        <li>Django</li>
+        <li id="my2">React JS</li>
+        <li>React Native</li>
+        <li id="jv2">Laravel</li>
+    </div>
+    <script>
+      var parentNode = document.getElementById("myid");
+      //var moveNode = document.getElementById("jv");
+      var moveNode = document.getElementById("jv2");
+      var refNode = document.getElementById("jv");
+
+      parentNode.insertBefore(moveNode, refNode);
+      
+      console.log(parentNode);
+    </script>
+</body>
+</html>

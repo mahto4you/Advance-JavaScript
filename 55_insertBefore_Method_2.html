@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normalize Method</title>
+</head>
+<body>
+    <div id="myid">
+        <li>Python</li>
+        <li id="my">C</li>
+        <li>C++</li>
+        <li id="jv">Javascript</li>
+    </div>
+    <script>
+      var parentNode = document.getElementById("myid");
+      //var moveNode = document.getElementById("jv");
+      var textNode = document.createTextNode("Java");
+      var refNode = document.getElementById("my");
+
+      parentNode.insertBefore(textNode, refNode);
+      
+      console.log(parentNode);
+    </script>
+</body>
+</html>

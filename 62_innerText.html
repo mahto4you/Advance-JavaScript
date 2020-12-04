@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHtml</title>
+</head>
+<body>
+    <div id="mydiv">
+        <ul id="myul">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+        </ul>
+    </div>
+    <script>
+        var target = document.getElementById('myul');
+        var target2 = document.getElementById('mydiv');
+        console.log(target.childNodes);
+        //target.innerText = "This is text";
+        console.log(target.innerText);
+    </script>
+</body>
+</html>

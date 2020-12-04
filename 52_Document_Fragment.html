@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Method</title>
+</head>
+<body>
+    <div id="myid">
+        <h1>We are Learning JavaScript</h1>
+        <h1>I am h1</h1>
+    </div>
+    <script>
+        // Creating Empty Document Fragement
+       var df = document.createDocumentFragment();
+
+       // Creating New Element h3
+
+       var hNode = document.createElement("h3");
+
+       // creating New Element p
+
+       var pNode = document.createElement("p");
+
+       // Text for New h3 and p element
+
+       hNode.textContent = "H3 from JS";
+       pNode.textContent = "p from JS";
+
+       // Appending Nodes to DF
+
+       df.appendChild(hNode);
+       df.appendChild(pNode);
+
+       var targetNode = document.getElementById("myid");
+
+       targetNode.appendChild(df);
+    </script>
+</body>
+</html>

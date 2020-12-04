@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertAdjacentElement Method</title>
+</head>
+<body>
+    <div id="mydiv">
+        <h1 id="myh1">Heading 1</h1>
+        <h1 id="myh2">Heading 2</h1>
+        <h1 id="myh3">Heading 3</h1>
+    </div>
+    <script>
+        var targetNode = document.getElementById("myh2");
+        var newEl = "I am Text"
+        targetNode.insertAdjacentText('beforebegin', newEl);
+        targetNode.insertAdjacentText('afterbegin', newEl);
+        targetNode.insertAdjacentText('beforeend', newEl);
+       targetNode.insertAdjacentText('afterend', newEl);
+
+        /*
+            position:  beforebegin, afterbegin ,beforeend, afterend
+         */
+        var parentNode = document.getElementById("mydiv");
+        console.log(parentNode);
+    </script>
+</body>
+</html>

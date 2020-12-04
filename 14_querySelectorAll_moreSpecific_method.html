@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="nitish">Java Script</title>
+</head>
+<body>
+    <h1>We are Learning</h1>
+    <h1 class="nitish myclass">Welcome to JS</h1>
+    <h2>Now</h2>
+    <p class="nitish">Hello
+         <span>Nitish Mahato</span>
+         <em>World</em>
+         <span>Youtube</span>
+    </p>
+    <p class="myclass">
+        <span>Bye</span>
+        Nitish Mahato
+    </p>
+    <p id="show1">Hi Welcome</p>
+    <p id="show3">Hi Hello World</p>
+    <div id="show">
+        <p>1st p inside div</p>
+        <p class="nitish">1st p inside div <span class="myspan">inside div</span></p>
+        <p class="myclass">2nd p inside div <span class="myspan">inside div p</span></p>
+        <p class="nitish">3rd p inside div</p>
+        <span class="myspan">hello Span</span>
+    </div>
+    <div id="my">Kenduadih Basti <span class="myspan">Welcome span</span></div>
+    <div>Dhanabd</div>
+    <script>
+      //var data = document.getElementById("show");
+      //var result =data.querySelectorAll("span.myspan");
+      var result = document.querySelectorAll("#show > .nitish >span.myspan")
+      document.write(result);
+      console.log(result);
+
+    </script>
+</body>
+</html>

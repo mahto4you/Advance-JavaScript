@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHtml</title>
+</head>
+<body>
+        <ul id="myul">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+        </ul>
+        <div id="mydiv">
+
+        </div>
+    <script>
+        var target = document.getElementById('myul');
+        var target2 = document.getElementById('mydiv');
+        var duplicateNode = target.cloneNode(true) // Copy entire things
+        //var duplicateNode = target.cloneNode(false) // Copy only attribute,value
+        target2.appendChild(duplicateNode);
+        console.log(document.body);
+    </script>
+</body>
+</html>

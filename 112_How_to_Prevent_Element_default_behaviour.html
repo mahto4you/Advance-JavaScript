@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to prevent element default behaviour</title>
+</head>
+<body>
+    <h1>Event Method</h1>
+    <div id="mydiv" style="width: 200px; height:200px; background-color:blueviolet">
+        <a href="http://www.google.com" id="mylink">Click and Open Google</a>
+    </div>
+    <script>
+        function stopLink(e){
+            e.preventDefault();
+        }
+        function div1(e){
+            this.style.backgroundColor = 'orange';
+        }
+        var l = document.getElementById("mylink");
+        var d = document.getElementById("mydiv");
+        l.addEventListener("click", stopLink, false);
+        d.addEventListener("click", div1, false);
+    </script>
+</body>
+</html>
